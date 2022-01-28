@@ -1,17 +1,23 @@
 .navbar 
 {
+  
     width: 100%;
     background-color: #000;
-    overflow: auto;
+    position: fixed;
+    top: 0px;
+    z-index: 10000;
   }
   .navbar a {
     float: left;
-    padding: 12px;
+    padding: 14px ;
     color: white;
     text-decoration: none;
     font-size: 17px;
+    margin: 0;
+    text-align: center;
+    
   }
-
+    /*
   .dropdown 
   {
     float: left;
@@ -22,11 +28,14 @@
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 14px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    text-align: center;
+  
   }
+  
   .dropdown-content {
     display: none;
     position: absolute;
@@ -45,8 +54,11 @@
     text-align: left;
   }
   .dropdown:hover .dropdown-content {
+   
     display: block;
+    
   }
+  */
   .navbar a:hover {
     background-color: #858585;
   }
@@ -55,21 +67,53 @@
     background-color: #04AA6D;
   }
 
-
+  .Home_Message
+  {
+    font-size: 25px;
+    width: 700px;
+    height: 300px;
+    text-align: left;
+    display: block;
+    
+  }
   .Home_Section
   {
-      display: block;
-      text-align: center;
-      background-color: powderblue;
-      height: 500px;
+     
+      text-align: left;
+      background-color: #2b6777;
+      height: 100vh;
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-
-
+      
   }
- 
+  .Project_Section
+  {
+      display: block;
+      text-align: center;
+      background-color: #fff;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .About_Me_Section
+  {
+      display: block;
+      text-align: center;
+      background-color: #616161;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #Contact
+  {
+    float: right;
+  } 
   /*When the width of this document is 500 pixels or less the nav bar is display as blocks*/
   @media screen and (max-width: 500px) {
     .navbar a {
