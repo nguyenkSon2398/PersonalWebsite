@@ -1,143 +1,79 @@
-*
+.navbar 
 {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Arvo', sans-serif;
-}
-
-.navbar
-{
-    background: #131313;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
-
-.navbar__container
-{
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    z-index: 1;
     width: 100%;
-    max-width: 1300px;
-    /* top and buttom have a margin of 0 and auto for right and left space outside*/
-    margin: 0 auto;
-    /*top and buttom have a margin of 0 and left and right have margin of 50px space inside the container*/
-    padding: 0 50px;
-}
-
-#navbar__logo
-{
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+    background-color: #000;
+    overflow: auto;
+  }
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 17px;
+  }
 
-}
-
-.fa-gem
-{
-    margin-right: 0.5rem;
-}
-
-.navbar__menu
-{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    text-align: center;
-}
-.navbar__item
-{
-    height: 80px;
-
-}
-.navbar__links
-{
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    padding: 0 1rem;
-    height: 100%;
-}
-
-.navbar__btn
-{
-    
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-    width: 100%;
-}
-
-.button
-{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
+  .dropdown 
+  {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;  
     border: none;
     outline: none;
-    border-radius: 4px;
-    background: #f77062;
-    color: #fff;
-}
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .navbar a:hover {
+    background-color: #858585;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
 
-.button:hover
-{
-    background: #4837ff;
-    transition: all 0.3 ease;
-}
-.navbar__links:hover
-{
-    color: #4837ff;
-    transition: all 0.3 ease;
-}
 
-@media screen and (max-width: 960px)
-{
-    .navbar__container
-    {
-     display: flex;
-     justify-content: space-between;
-     height: 80px;
-     z-index: 1;
-     width: 100%;
-     max-width: 1300px;
-     padding: 0;
+  .Home_Section
+  {
+      display: block;
+      text-align: center;
+      background-color: powderblue;
+      height: 500px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+  }
+ 
+  /*When the width of this document is 500 pixels or less the nav bar is display as blocks*/
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
     }
-    .navbar__menu
-    {
-        display:grid;
-        grid-template-columns: auto;
-        margin:0;
-        width:100%;
-        position: absolute;
-        opacity: 0;
-        top: -1000;
-        transition: all 0.5s ease;
-        height: 50vh;
-        z-index: -1;
-    }
-}
+  }

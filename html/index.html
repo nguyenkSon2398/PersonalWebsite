@@ -8,37 +8,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="navbar">
-      <div class="navbar__container">
-          <!--Create text logo on top left-->
-          <a href="/" id="navbar__logo">Kevin Nguyen</a>
-          <!--When click logo brings up mobile menu with span edits the colors-->
-          <div class="navbar__toggle" id="mobile_menu">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-          </div>
-          <!--navigation bar tabs are all inside the class navbar-->
-          <ul class="navbar__menu">
-              <!--creates a list of item with ahref refers to the link of the page-->
-              <li class="navbar__items">
-                  <a href="/" class="navbar__links">
-                      Home
-                  </a>
-              </li>
-              <li class="navbar__items">
-                <a href="/tech.html" class="navbar__links">
-                    Tech
-                </a>
-            </li>
-            <li class="navbar__btn">
-                <a href="/" class="button">
-                    Email Me
-                </a>
-            </li>
-          </ul>
-      </div>
-
-  </nav>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <div class= "dropdown">
+            <button class= "dropbtn">
+                Projects
+            </button>
+            <div class= "dropdown-content">
+                <a href="/">Hospital Database</a>
+                <a href="/">Personal Website</a>
+            </div>
+        </div>
+        
+        <a href="/">About Me</a>
+    </div>
+    <div class = "Home_Section">
+        <section>
+            <h2>Welcome to my Website</h2>
+        </section>
+    </div>
+    <div class = "Project_Section">
+        <section>
+            <h2>Projects I am working on</h2>
+        </section>
+    </div>
+    
 </body>
 </html>
