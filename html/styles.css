@@ -119,34 +119,66 @@
       align-items: center;
   }
 
+  
 
 
 
+ 
 
+  img
+  {
+    display: flex;
+    height: 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  
+  .containers
+  {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+   
+    
+  }
+  .rows
+  {
+    clear: both;
+  }
+  .columns
+  {
+    width: 33%;
+    float: left;
+    
+    
+  }
   .row
   {
     display: flex;
+    align-items: center;
+    width: 100%;
   }
   .column
   {
     flex: 50%;
     padding: 5px;
-    
-
-  } 
-  img
-  {
-    display: block;
-    height: 100%;
-    max-width: 100%;
-    
+    align-items: center;
+  
   }
   .container
   {
     position: relative;
     width: 400px;
+    display: block;
+    align-items: center;
+   
+    
   }
- 
   .overlay
   {
     position: absolute;
@@ -159,6 +191,7 @@
     opacity: 0;
     transition: 0.5s ease;
     background-image: url(images/explore_git.jpg);
+    align-items: center;
 
   }
   .container:hover .overlay
